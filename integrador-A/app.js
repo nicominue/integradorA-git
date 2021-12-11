@@ -7,8 +7,8 @@ const countries = require('./countries.json');
  * @returns {array}
  */
 function getCountryNameByIso3(isoCode){
-    //complete with your code
-}
+    return countries.filter(country => country.iso3 === isoCode);
+   }
 
 /**
  * Get country summary given the ISO3 code. 
@@ -28,7 +28,7 @@ function getCountryNameByIso3(isoCode){
  * @returns {Object}
  */
 function getCountrySummary(isoCode){
-    //complete with your code
+    
 }
 
 function main() {
